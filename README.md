@@ -33,22 +33,12 @@ This project is a web application developed with **Angular** that allows users t
 
 ---
 
-## 📝 Requirements
-
-Before starting, make sure you have the following installed:
-
-- [Node.js](https://nodejs.org/) >= 14.x.x
-- [npm](https://www.npmjs.com/) >= 6.x.x
-- [Angular CLI](https://angular.io/cli) >= 12.x.x
-
----
-
 ## ⚙️ Installation
 
 1. **Clone the repository**:
 
-   ```bash
-   git clone https://github.com/your-username/rick-and-morty-app.git
+  ```bash
+  git clone https://github.com/your-username/rick-and-morty-app.git
   ```
 
 2. **Navigate to the project directory:**:
