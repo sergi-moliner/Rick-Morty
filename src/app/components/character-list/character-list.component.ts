@@ -2,11 +2,12 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { RickMortyService } from '../../services/rick-morty.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-character-list',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, NgOptimizedImage],
   templateUrl: './character-list.component.html',
   styleUrl: './character-list.component.css'
 })

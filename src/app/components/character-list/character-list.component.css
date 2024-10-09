@@ -1,0 +1,135 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: #1b3b45;
+  padding: 20px;
+}
+
+.header-logo {
+  max-width: 600px;
+  height: auto;
+}
+
+.container {
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+}
+
+.search-container {
+  display: flex;
+}
+
+.search-bar {
+  border-radius: 50px 0 0 50px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  background-color: #3a746a;
+  border: none;
+  color: white;
+  font-size: 18px;
+  flex: 1;
+}
+
+.search-bar::placeholder {
+  color: #c0d9d7;
+}
+
+.btn-search {
+  background-color: #3a746a;
+  border-radius: 0 50px 50px 0;
+  border: none;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-search i {
+  font-size: 20px;
+  color: #c0d9d7;
+  margin: 0;
+}
+
+.input-group {
+  height: 100%;
+}
+
+.section-title {
+  color: #f7f7f7;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.title-divider {
+  height: 2px;
+  background-color: #ffcc00;
+  margin-left: 10px;
+}
+
+.character-card {
+  background-color: #224c58;
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  padding-top: 70px;
+  color: white;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.card-img-wrapper {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.character-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 5px solid white;
+}
+
+.card-title {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-top: 70px;
+}
+
+.card-text {
+  color: #b8d1db;
+  margin-bottom: 10px;
+}
+
+.card-text i {
+  font-size: 10px;
+  margin-right: 5px;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.character-card:hover {
+  border: 3px solid #ffcc00;
+}
+
+@media (max-width: 768px) {
+  .character-card {
+    margin-bottom: 20px;
+  }
+  .search-bar {
+    padding: 15px 50px 15px 20px;
+  }
+}
