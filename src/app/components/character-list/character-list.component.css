@@ -47,6 +47,13 @@
   justify-content: center;
   margin-top: 20px;
 }
+.load-more{
+  background-color: #3a746a;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 18px;
+}
 
 .btn-search i {
   font-size: 20px;

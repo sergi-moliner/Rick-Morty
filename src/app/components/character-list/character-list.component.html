@@ -36,5 +36,16 @@
       </div>
     }
     </div>
-  </div>
+    <div class="row">
+      <div class="col text-center mt-4">
+        @if(currentPage <= totalPages && !isLoading){
+        <button (click)="loadCharacters()" class="btn btn-primary load-more">
+          Carregar més
+        </button>
+      }
+        @if(currentPage > totalPages){
+        <p>No hi ha més personatjes per carregar.</p>
+        }
+      </div>
+    </div>
 </div>

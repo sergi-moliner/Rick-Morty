@@ -15,7 +15,7 @@ export class CharacterListComponent implements OnInit {
   allCharacters: any[] = [];
   searchTerm: string = '';
   currentPage: number = 1;
-  totalPages: number = 0;
+  totalPages: number = 42;
   isLoading: boolean = false;
 
   constructor(private rickMortyService: RickMortyService) {}
@@ -26,16 +26,24 @@ export class CharacterListComponent implements OnInit {
 
 
   loadCharacters(): void {
-    if (this.isLoading) return;
+    if (this.isLoading || this.currentPage > this.totalPages) return;
     this.isLoading = true;
 
-    this.rickMortyService.getCharacters(this.currentPage).subscribe(response => {
-      this.characters = [...this.characters, ...response.results];
-      this.allCharacters = [...this.characters];
-      this.totalPages = response.info.pages;
-      this.isLoading = false;
-    });
+    this.rickMortyService.getCharacters(this.currentPage).subscribe(
+      response => {
+        this.characters = [...this.characters, ...response.results];
+        this.totalPages = response.info.pages;
+        this.isLoading = false;
+        this.currentPage++;
+      },
+      error => {
+        console.error('Error cargando la página', error);
+        this.isLoading = false;
+      }
+    );
   }
+
+
 
   searchCharacters(): void {
     if (this.searchTerm === '') {
