@@ -1,6 +1,6 @@
 # 🧪 Rick and Morty Character Finder
 
-![Project Banner](./assets/imgs/rick.png)
+![Project Banner](public/assets/imgs/rick.png)
 
 ## 🚀 Description
 
@@ -10,7 +10,7 @@ This project is a web application developed with **Angular** that allows users t
 
 | Home Screen                                         |
 | --------------------------------------------------- |
-| ![Home Screenshot](./assets/imgs/screenshot.png)      |
+| ![Home Screenshot](public/assets/imgs/screenshot.png)      |
 
 ---
 
