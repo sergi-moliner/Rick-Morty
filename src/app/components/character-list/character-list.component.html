@@ -1,6 +1,5 @@
 <div class="container text-center mt-5">
-
-  <div class="header">
+  <div class="header mb-5">
     <img src="./assets/imgs/rick.png" alt="Rick y Morty Logo" class="header-logo">
   </div>
 
@@ -19,9 +18,9 @@
       <hr class="title-divider flex-grow-1">
     </div>
 
-    <div class="row">
+    <div class="row mt-3">
       @for(character of characters; track character.id){
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mt-3">
         <div class="card character-card shadow">
           <div class="card-img-wrapper">
             <img [src]="character.image" class="card-img-top rounded-circle character-img" alt="{{ character.name }}">
